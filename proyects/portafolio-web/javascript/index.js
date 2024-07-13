@@ -12,6 +12,17 @@ toggleBtn.addEventListener("click", () => {
   toggleBtnIcon.classList = isOpen ? "fi fi-br-cross" : "fi fi-br-menu-burger";
 });
 
+const optionsNavbar = document.getElementsByClassName("nav-item")
+
+Array.prototype.forEach.call(optionsNavbar, (option) => {
+  option.addEventListener("click", () => {
+    dropDownMenu.classList.toggle("open");
+    const isOpen = dropDownMenu.classList.contains("open");
+
+    toggleBtnIcon.classList = isOpen ? "fi fi-br-cross" : "fi fi-br-menu-burger";
+  })
+})
+
 const btnsCerrarInfo = document.getElementsByClassName("btnCerrarInfo");
 const btnsAbrirInfo = document.getElementsByClassName("btnAbrirInfo");
 const dialogsInfo = document.querySelectorAll("dialog");
