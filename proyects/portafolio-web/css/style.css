@@ -657,8 +657,8 @@ dialog {
     dialog {
         position: fixed;
         top: 10%;
-        left: 10%;
-        width: 80%;
+        left: 5%;
+        width: 90%;
         min-height: auto;
         text-align: center;
     }
