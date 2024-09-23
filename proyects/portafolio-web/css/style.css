@@ -271,6 +271,12 @@ h2 {
     background-image: url('../img/PortadaEcommerce.webp')
 }
 
+#cardProyectProyectosReact {
+    color: white;
+    background-size: 100%;
+    background-image: url('../img/ProyectorReact.webp');
+}
+
 #cardProyectProyectosDuranteLaCarrera {
     color: white;
     background-size: 100%;
@@ -320,12 +326,11 @@ dialog {
     top: 15%;
     left: 15%;
     width: 70%;
-    height: 75%;
+    max-height: 90%;
     text-align: center;
     padding: 6px;
     border: 2px solid black;
     border-radius: 12px;
-    transition: all 1.5s;
     box-shadow: 0px 0px 40px 15px black;
     background-color: #1b1b1b;
     color: white;
@@ -624,7 +629,7 @@ dialog {
 
     .containerInfoText p {
         font-size: small;
-        margin: 1rem;
+        margin: 1rem 2rem;
     }
 
     .grid {
@@ -640,8 +645,31 @@ dialog {
         left: 0.5rem;
         width: unset;
     }
+    .presetacion p {
+        margin-top: 10px;
+    }
 
+    .containerInfoText p {
+        font-size: small;
+        margin: 1rem;
+    }
 
+    dialog {
+        position: fixed;
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .header-presentacion h1 {
+        font-size: 2.5rem;
+    }
+    
+    .header-presentacion h2 {
+        font-size: 2rem;
+    }
     .imgCarrusel {
         width: 14rem;
     }

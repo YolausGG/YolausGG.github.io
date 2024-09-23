@@ -166,18 +166,25 @@
                             Info.</a>
                     </div>
                 </div>
-                <div id="cardProyectProyectosDuranteLaCarrera" class="grid-item-proyect">
-                    <h3>Proyectos Durante La Carrera</h3>
+                <div id="cardProyectProyectosReact" class="grid-item-proyect">
+                    <h3>Pequelos Proyectos React</h3>
                     <div class="div-link-proyect">
                         <a class="btnAbrirInfo link-proyect" onclick="cargarCarrusel('ProyectosDuranteLaCarrera')"
                             id="btnProyectosDuranteLaCarrera">Más Info.</a>
                     </div>
-                </div>
+                </div>                
                 <div id="cardProyectPortafolioWeb" class="grid-item-proyect">
                     <h3>Este Portafolio</h3>
                     <div class="div-link-proyect">
                         <a class="btnAbrirInfo link-proyect" onclick="cargarCarrusel('PortafolioWeb')"
                             id="btnPortafolioWeb">Más Info.</a>
+                    </div>
+                </div>
+                <div id="cardProyectProyectosDuranteLaCarrera" class="grid-item-proyect">
+                    <h3>Proyectos Durante La Carrera</h3>
+                    <div class="div-link-proyect">
+                        <a class="btnAbrirInfo link-proyect" onclick="cargarCarrusel('ProyectosDuranteLaCarrera')"
+                            id="btnProyectosDuranteLaCarrera">Más Info.</a>
                     </div>
                 </div>
             </article>
@@ -186,7 +193,7 @@
             <h2 id="abouteMe" class="subtitle">Acerca de mí</h2>
             <div>
                 <p>
-                    Cursé dos años de carrera más uno de Proyecto Final, al final de cada semestre entragábamos en grupo
+                    Cursé dos años de carrera más uno de Proyecto Final, al finalizar cada semestre entragábamos en grupo
                     un proyecto sobre los lenguajes, herramientas y conceptos estudiados ese semestre.
                     <br>
                     En el Proyecto Final desarrollamos junto a mi compañero Nicolás Troche un Sistema para Administrar y
@@ -214,22 +221,20 @@
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/yolausgg/" target="_blank" rel="noopener noreferrer">
-                        <img class="iconFooter" src="img/linkedin.webp"
-                            alt="logo de LinkedIn"><strong>LinkedIn</strong>
+                        <img class="iconFooter" src="img/linkedin.webp" alt="logo de LinkedIn"><strong>LinkedIn</strong>
                     </a>
                 </li>
-
-
             </ul>
             <ul>
                 <li>
-                    <a href="https://drive.google.com/file/d/10ltS0GobEU76BHrHknmbbtuy5rdPucW3/view?usp=drive_link"
-                        title="redireciona al CV en LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <a href="https://drive.google.com/file/d/10ltS0GobEU76BHrHknmbbtuy5rdPucW3/view?usp=drive_link" title="CV en Drive" target="_blank"
+                        rel="noopener noreferrer">
                         <img class="iconFooter" src="img/drive.webp" alt="logo de LinkedIn"><strong>CV</strong>
                     </a>
-                </li><li>
+                </li>
+                <li>
                     <a href="https://drive.google.com/file/d/10mItUNSLkbBv7xhJgBRCGTaTDOW0VHYP/view?usp=drive_link"
-                        title="redireciona al CV en LinkedIn" target="_blank" rel="noopener noreferrer">
+                        title="Diploma en Drive" target="_blank" rel="noopener noreferrer">
                         <img class="iconFooter" src="img/drive.webp" alt="logo de LinkedIn"><strong>Diploma</strong>
                     </a>
                 </li>
@@ -240,7 +245,7 @@
                     </a>
                 </li>
             </ul>
-            <ul>
+            <ul>                
                 <li>
                     <i class="fa fa-copyright" aria-hidden="true">©Yolaus Godoy - 2024</i>
                 </li>
@@ -300,7 +305,36 @@
                         <div id="idImgCarruselECommerce">
                             <img class="imgCarrusel" src="img/HerramientasEcommerce.webp" alt="Imagen del Carrusel"
                                 loading="lazy">
-                        </div>                       
+                        </div>
+                    </div>
+                </div>
+                <button class="btnCerrarInfo"><i class="fi-br-cross"></i></button>
+            </dialog>
+            <dialog id="dialogProyectosReact">
+                <div class="containerInfo">
+                    <div class="containerInfoText">
+                        <h3 class="titleProyect">Proyectos durante la Carrera</h3>
+                        <p>En este Repositorio estoy subiendo los pequeños proyectos, funciones, repartidos,
+                            fragmentos de código que hice mientras curse la carrera de Analista Programador.
+                            <br>
+                            Desarrollados con distintas herramientas y lenguajes.
+                            <br>
+                            La idea con este Repositorio es ir mostrando lo que hice durante la carrera.
+                        </p>
+                        <a class="btnRepositorio" target="_blank"
+                            href="https://github.com/YolausGG/ProyectosDuranteLaCarrera">Repositorio</a>
+                    </div>
+                    <div class="containerCarruselInfo">
+                        <div id="idImgCarruselProyectosDuranteLaCarrera">
+                            <img class="imgCarrusel" src="img/HerramientasProyectosDutanteLaCarrera.webp"
+                                alt="Imagen del Carrusel" loading="lazy">
+                        </div>
+                        <div class="conainerFlechitasCarrusel">
+                            <img class="izqImgCarrusel" id="atrasProyectosDuranteLaCarrera" src="img/atras.webp"
+                                alt="flecha atras">
+                            <img class="derImgCarrusel" id="adelanteProyectosDuranteLaCarrera" src="img/atras.webp"
+                                alt="flecha adelante">
+                        </div>
                     </div>
                 </div>
                 <button class="btnCerrarInfo"><i class="fi-br-cross"></i></button>
