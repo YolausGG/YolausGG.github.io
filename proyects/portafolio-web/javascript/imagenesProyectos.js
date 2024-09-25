@@ -5,10 +5,8 @@ let imgsCarruselGDB = [
 let imgsCarruselEcommerce = [
     "/img/HerramientasEcommerce.webp"
 ]
-let imgsCarruselProyectosDuranteLaCarrera = [
-    "/img/HerramientasProyectosDutanteLaCarrera.webp",
-    "/img/imgMutualistaSF.webp",
-    "/img/fichaBovino.webp"
+let imgsCarruselProyectosReact = [
+    "/img/ProyectosReact.webp"
 ]
 let imgsCarruselPortafolioWeb = [
     "/img/HerramientasPortafolioWeb.webp"
@@ -21,10 +19,8 @@ cargarCarrusel = (nameProject) => {
     let adelante = document.getElementById(`adelante${nameProject}`)
     let actual = 0;
 
-    console.log(nameProject);
-
     let selectImgsCarrusel = []
-    
+
     switch (nameProject) {
         case "GDB":
             selectImgsCarrusel = imgsCarruselGDB
@@ -32,8 +28,8 @@ cargarCarrusel = (nameProject) => {
         case "ECommerce":
             selectImgsCarrusel = imgsCarruselEcommerce
             break;
-        case "ProyectosDuranteLaCarrera":
-            selectImgsCarrusel = imgsCarruselProyectosDuranteLaCarrera
+        case "ProyectosReact":
+            selectImgsCarrusel = imgsCarruselProyectosReact
             break;
         case "PortafolioWeb":
             selectImgsCarrusel = imgsCarruselPortafolioWeb
@@ -42,23 +38,25 @@ cargarCarrusel = (nameProject) => {
             break;
     }
 
-    atras.addEventListener('click', function () {
-        actual -= 1
+    if (atras != null) {
+        atras.addEventListener('click', function () {
+            actual -= 1
 
-        if (actual == -1) {
-            actual = selectImgsCarrusel.length - 1
-        }
+            if (actual == -1) {
+                actual = selectImgsCarrusel.length - 1
+            }
 
-        img.innerHTML = `<img class="imgCarrusel" src="${selectImgsCarrusel[actual]}" alt="Imagen del Carrusel" loading="lazy">`
-    })
+            img.innerHTML = `<img class="imgCarrusel" src="${selectImgsCarrusel[actual]}" alt="Imagen del Carrusel" loading="lazy">`
+        })
 
-    adelante.addEventListener('click', function () {
-        actual += 1
+        adelante.addEventListener('click', function () {
+            actual += 1
 
-        if (actual == selectImgsCarrusel.length) {
-            actual = 0
-        }
+            if (actual == selectImgsCarrusel.length) {
+                actual = 0
+            }
 
-        img.innerHTML = `<img class="imgCarrusel" src="${selectImgsCarrusel[actual]}" alt="Imagen del Carrusel" loading="lazy">`
-    })
+            img.innerHTML = `<img class="imgCarrusel" src="${selectImgsCarrusel[actual]}" alt="Imagen del Carrusel" loading="lazy">`
+        })
+    }
 }

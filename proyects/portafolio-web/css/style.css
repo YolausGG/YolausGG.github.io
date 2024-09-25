@@ -274,7 +274,7 @@ h2 {
 #cardProyectProyectosReact {
     color: white;
     background-size: 100%;
-    background-image: url('../img/ProyectorReact.webp');
+    background-image: url('../img/ProyectosReact.webp');
 }
 
 #cardProyectProyectosDuranteLaCarrera {
@@ -377,7 +377,7 @@ dialog {
 .containerInfo p {
     font-size: 16px;
     background-color: #1b1b1b;
-    text-align: justify;
+    text-align:start;
     font-family: 'Inter', sans-serif;
 }
 
@@ -498,6 +498,11 @@ dialog {
 
 #stg-WP {
     white-space: nowrap;
+}
+
+.linkAWeb {
+    color: rgb(135, 206, 235);
+    text-decoration: underline;
 }
 
 @media (max-width: 830px) {
@@ -635,7 +640,8 @@ dialog {
     .grid {
         margin: 1rem;
     }
-    .imgCarrusel {        
+
+    .imgCarrusel {
         margin-bottom: 1rem;
     }
 }
@@ -645,6 +651,7 @@ dialog {
         left: 0.5rem;
         width: unset;
     }
+
     .presetacion p {
         margin-top: 10px;
     }
@@ -657,8 +664,8 @@ dialog {
     dialog {
         position: fixed;
         top: 10%;
-        left: 5%;
-        width: 90%;
+        left: 10%;
+        width: 80%;
         min-height: auto;
         text-align: center;
     }
@@ -666,10 +673,11 @@ dialog {
     .header-presentacion h1 {
         font-size: 2.5rem;
     }
-    
+
     .header-presentacion h2 {
         font-size: 2rem;
     }
+
     .imgCarrusel {
         width: 14rem;
     }
