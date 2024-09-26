@@ -460,7 +460,7 @@ dialog::backdrop {
 }
 
 .cierreDialog {
-    width: 1rem;
+    width: 0.8rem;
 }
 
 .abautMeContainer {
@@ -476,7 +476,7 @@ dialog::backdrop {
     text-wrap: wrap;
     max-width: 580px;
     font-size: 1.2rem;
-    text-align: justify;
+    text-align: start;
 }
 
 .abautMeContainer div {
@@ -620,7 +620,6 @@ dialog::backdrop {
 
     }
 
-
     .btn-contacto:hover {
         color: white;
     }
@@ -669,6 +668,10 @@ dialog::backdrop {
         margin: 0.5rem;
     }
 
+    .abautMeContainer p {
+        text-align: center;
+    }
+
     .grid-item-proyect * {
         opacity: 1;
     }
@@ -691,6 +694,10 @@ dialog::backdrop {
 
     .imgCarrusel {
         margin-bottom: 1rem;
+    }
+
+    .cierreDialog {
+        width: 1rem;
     }
 }
 
