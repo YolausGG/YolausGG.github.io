@@ -13,13 +13,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
 
     <script defer src="particles.js"></script>
     <script defer src="javascript/index.js"></script>
     <script defer src="javascript/imagenesProyectos.js"></script>
 
     <title>Portafolio de Yolaus Godoy</title>
+
+   
 </head>
 
 <body>
@@ -42,7 +43,7 @@
                 <li class="nav-item"><a href="#proyectos">Proyectos</a></li>
             </ul>
             <div class="toggle-btn">
-                <i class="fi fi-br-menu-burger"></i>
+                <img class="icon-menu" src="./img/menu-hamburguesa.webp" alt="icono-menu">
             </div>
         </nav>
 
@@ -67,80 +68,81 @@
 
             </div>
             <figure>
-                <img id="fotoYolaus" src="img/YolaFotoCV_R.png" alt=" imagen de Yolaus Godoy">
+                <img id="fotoYolaus" class="animacion-aparecer" src="img/YolaFotoCV_R.png"
+                    alt=" imagen de Yolaus Godoy">
             </figure>
         </section>
 
         <section id="habilidades" class="main-container">
             <h2 class="subtitle"> Lenguajes, Frameworks y Librerias</h2>
             <article class="grid">
-                <div class="grid-item">
+                <div class="grid-item animacion-aparecer">
                     <h3 class="h3-title-item">HTML</h3>
                     <figure>
                         <img src="img/HTMLLogo.webp" alt="Logo de HTML" class="grid-img">
                     </figure>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item animacion-aparecer">
                     <h3 class="h3-title-item">CSS</h3>
                     <figure>
                         <img src="img/CSSLogo.webp" alt="Logo de CSS" class="grid-img">
                     </figure>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item animacion-aparecer">
                     <h3 class="h3-title-item">JavaSctipt</h3>
                     <figure>
                         <img src="img/JSLogo.webp" alt="Logo de JavaSctipt" class="grid-img">
                     </figure>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item animacion-aparecer">
                     <h3 class="h3-title-item">Java</h3>
                     <figure>
                         <img src="img/JavaLogo.webp" alt="Logo de Java" class="grid-img">
                     </figure>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item animacion-aparecer">
                     <h3 class="h3-title-item">C#</h3>
                     <figure>
                         <img src="img/CSharpLogo.webp" alt="Logo de CSharp" class="grid-img">
                     </figure>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item animacion-aparecer">
                     <h3 class="h3-title-item">SQl Server</h3>
                     <figure>
                         <img src="img/SQLServerLogo.webp" alt="Logo de SQLServer" class="grid-img">
                     </figure>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item animacion-aparecer">
                     <h3 class="h3-title-item">MySQL</h3>
                     <figure>
                         <img src="img/MySQLLogo.webp" alt="Logo de MySQL" class="grid-img">
                     </figure>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item animacion-aparecer">
                     <h3 class="h3-title-item">React</h3>
                     <figure>
                         <img src="img/ReactLogo.webp" alt="Logo de React" class="grid-img">
                     </figure>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item animacion-aparecer">
                     <h3 class="h3-title-item">Bootstrap</h3>
                     <figure>
                         <img src="img/BootstrapLogo.webp" alt="Logo de Bootstrap" class="grid-img">
                     </figure>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item animacion-aparecer">
                     <h3 class="h3-title-item">VS Code</h3>
                     <figure>
                         <img src="img/VSCodeLogo.webp" alt="Logo de Visual Studio Code" class="grid-img">
                     </figure>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item animacion-aparecer">
                     <h3 class="h3-title-item">Netbeans</h3>
                     <figure>
                         <img src="img/NetbeansLogo.webp" alt="Logo de Netbeans" class="grid-img">
                     </figure>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item animacion-aparecer">
                     <h3 class="h3-title-item">IIJIDEA</h3>
                     <figure>
                         <img src="img/IIJIDEALogo.webp" alt="Logo de IIJIDEA" class="grid-img">
@@ -153,27 +155,27 @@
         <section id="proyectos" class="main-container">
             <h2 class="subtitle">Proyectos</h2>
             <article class="grid">
-                <div id="cardProyectGDB" class="grid-item-proyect">
+                <div id="cardProyectGDB" class="grid-item-proyect animacion-aparecer">
                     <h3>Gestión de Bovinos</h3>
                     <div class="div-link-proyect">
                         <a class="btnAbrirInfo link-proyect" onclick="cargarCarrusel('GDB')" id="btnGDB">Más Info.</a>
                     </div>
                 </div>
-                <div id="cardProyectEcommerce" class="grid-item-proyect">
+                <div id="cardProyectEcommerce" class="grid-item-proyect animacion-aparecer">
                     <h3>E-Commerce</h3>
                     <div class="div-link-proyect">
                         <a class="btnAbrirInfo link-proyect" onclick="cargarCarrusel('ECommerce')" id="btnECommerce">Más
                             Info.</a>
                     </div>
                 </div>
-                <div id="cardProyectProyectosReact" class="grid-item-proyect">
+                <div id="cardProyectProyectosReact" class="grid-item-proyect animacion-aparecer">
                     <h3>Pequeños Proyectos React</h3>
                     <div class="div-link-proyect">
                         <a class="btnAbrirInfo link-proyect" onclick="cargarCarrusel('ProyectosReact')"
                             id="btnProyectosReact">Más Info.</a>
                     </div>
                 </div>
-                <div id="cardProyectPortafolioWeb" class="grid-item-proyect">
+                <div id="cardProyectPortafolioWeb" class="grid-item-proyect animacion-aparecer">
                     <h3>Este Portafolio</h3>
                     <div class="div-link-proyect">
                         <a class="btnAbrirInfo link-proyect" onclick="cargarCarrusel('PortafolioWeb')"
@@ -279,7 +281,8 @@
                         </div>
                     </div>
                 </div>
-                <button class="btnCerrarInfo"><i class="fi-br-cross"></i></button>
+                <button class="btnCerrarInfo"><img class="cierreDialog" src="./img/cruz.webp"
+                        alt="Cerrar Info"></button>
             </dialog>
             <dialog id="dialogEcommerce">
                 <div class="containerInfo">
@@ -303,7 +306,8 @@
                         </div>
                     </div>
                 </div>
-                <button class="btnCerrarInfo"><i class="fi-br-cross"></i></button>
+                <button class="btnCerrarInfo"><img class="cierreDialog" src="./img/cruz.webp"
+                        alt="Cerrar Info"></button>
             </dialog>
             <dialog id="dialogProyectosReact">
                 <div class="containerInfo">
@@ -332,7 +336,8 @@
                         </div>
                     </div>
                 </div>
-                <button class="btnCerrarInfo"><i class="fi-br-cross"></i></button>
+                <button class="btnCerrarInfo"><img class="cierreDialog" src="./img/cruz.webp"
+                        alt="Cerrar Info"></button>
             </dialog>
             <dialog id="dialogPortafolioWeb">
                 <div class="containerInfo">
@@ -355,7 +360,8 @@
                         </div>
                     </div>
                 </div>
-                <button class="btnCerrarInfo"><i class="fi-br-cross"></i></button>
+                <button class="btnCerrarInfo"><img class="cierreDialog" src="./img/cruz.webp"
+                        alt="Cerrar Info"></button>>
             </dialog>
         </section>
     </main>

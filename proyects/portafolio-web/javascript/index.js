@@ -2,14 +2,14 @@
 particlesJS.load("particles-js", "particlesjs-config.json", function () { });
 
 const toggleBtn = document.querySelector(".toggle-btn");
-const toggleBtnIcon = document.querySelector(".toggle-btn i");
+const toggleBtnIcon = document.querySelector(".toggle-btn img");
 const dropDownMenu = document.querySelector(".dropdown_nav-menu");
 
 toggleBtn.addEventListener("click", () => {
   dropDownMenu.classList.toggle("open");
   const isOpen = dropDownMenu.classList.contains("open");
 
-  toggleBtnIcon.classList = isOpen ? "fi fi-br-cross" : "fi fi-br-menu-burger";
+  toggleBtnIcon.src = isOpen ? "./img/cruz.webp" : "./img/menu-hamburguesa.webp";
 });
 
 const optionsNavbar = document.getElementsByClassName("nav-item")
@@ -19,7 +19,7 @@ Array.prototype.forEach.call(optionsNavbar, (option) => {
     dropDownMenu.classList.toggle("open");
     const isOpen = dropDownMenu.classList.contains("open");
 
-    toggleBtnIcon.classList = isOpen ? "fi fi-br-cross" : "fi fi-br-menu-burger";
+    toggleBtnIcon.src = isOpen ? "./img/cruz.webp" : "./img/menu-hamburguesa.webp";
   })
 })
 

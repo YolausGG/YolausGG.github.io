@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -25,6 +26,10 @@ body {
 .nav-menu {
     display: flex;
     padding: 0 2rem;
+}
+
+.icon-menu {
+    width: 35px;
 }
 
 li {
@@ -334,6 +339,24 @@ dialog {
     box-shadow: 0px 0px 40px 15px black;
     background-color: #1b1b1b;
     color: white;
+    transition: scale 0.3s ease,
+        display 0.3s ease allow-discrete;
+    scale: 0;
+
+    &[open] {
+        scale: 1;
+        transition: 0.3s ease-in-out;
+
+        @starting-style {
+            scale: 0;
+        }
+    }
+}
+
+dialog::backdrop {
+    transition: 0.7s;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
 }
 
 .btnCerrarInfo {
@@ -377,7 +400,7 @@ dialog {
 .containerInfo p {
     font-size: 16px;
     background-color: #1b1b1b;
-    text-align:start;
+    text-align: start;
     font-family: 'Inter', sans-serif;
 }
 
@@ -434,6 +457,10 @@ dialog {
     filter: drop-shadow(0px 0px 1px white);
     width: 40px;
     cursor: pointer;
+}
+
+.cierreDialog {
+    width: 12px;
 }
 
 .abautMeContainer {
@@ -503,6 +530,29 @@ dialog {
 .linkAWeb {
     color: rgb(135, 206, 235);
     text-decoration: underline;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 80%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+.animacion-aparecer {
+    view-timeline-name: --aparecer;
+    view-timeline-axis: block;
+
+    animation-timeline: --aparecer;
+    animation-name: show;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
 }
 
 @media (max-width: 830px) {
