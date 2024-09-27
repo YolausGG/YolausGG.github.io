@@ -634,11 +634,14 @@ dialog::backdrop {
         height: 450px;
     }
 
-
     .presetacion {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        text-align: center;
+    }
+
+    .presetacion p{
         text-align: center;
     }
 
@@ -666,11 +669,7 @@ dialog::backdrop {
 
     .abautMeContainer {
         margin: 0.5rem;
-    }
-
-    .abautMeContainer p {
-        text-align: center;
-    }
+    }  
 
     .grid-item-proyect * {
         opacity: 1;
