@@ -669,7 +669,7 @@ dialog::backdrop {
     }
 
     .abautMeContainer p {
-        text-align: center;
+        text-align: start;
     }
 
     .grid-item-proyect * {
