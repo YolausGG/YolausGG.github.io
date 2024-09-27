@@ -641,7 +641,7 @@ dialog::backdrop {
         text-align: center;
     }
 
-    .presetacion p{
+    .presetacion p {
         text-align: center;
     }
 
@@ -669,7 +669,11 @@ dialog::backdrop {
 
     .abautMeContainer {
         margin: 0.5rem;
-    }  
+    }
+
+    .abautMeContainer p {
+        text-align: start;
+    }
 
     .grid-item-proyect * {
         opacity: 1;
